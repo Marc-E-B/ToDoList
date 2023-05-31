@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+}
+
+html,body  
+{  
+overflow-x:hidden;  
+}  
+
+body{
+    height: 100vh;
+    margin: auto;
+}
+
+h1{
+    margin: auto;
+}
+
+header{
+    background-color: blue;
+    padding-bottom: 2em;
+    text-align: center;
+}
+
+input{
+    width: 60vw;
+}
+
+button{
+    width: 15vw;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+input, button{
+    height: 100%;
+}
+
+footer{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background-color: blue;
+    text-align: center;
+}
+
+#inputAndButton{
+    height: 5vh;
+}
+
+#ulList{
+    padding-left: 0px;
+    margin:0px ;
+}
+
+li{
+    background-color: lightgray;
+    list-style-type:none;
+    height: 2.15em;
+    padding-top: 0.5em;
+    font-size: 1em;
+    vertical-align: middle;
+    padding-left: 12px;
+    /* word-break: break-all; */
+}
+
+li_click{
+    background-color: black;
+}
+
+li:hover{
+    background-color: blue;
+    cursor: default;
+}
+
+li:nth-child(odd) {
+    background: rgb(228, 225, 225);
+    transition: 0.5s;
+  }
+
+  li:nth-child(odd):hover {
+    background: blue;
+    transition: 0.5s;
+  }
+
+  .close {
+    position: absolute;
+    right: 0px;
+    padding: 0.5em;
+    margin-top: -0.5em;
+    font-weight: 700;
+  }
+
+  .close:hover {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+  }
