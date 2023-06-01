@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    font-family: 'Geologica', sans-serif;
 }
 
 html,body  
@@ -63,7 +64,6 @@ li{
     font-size: 1em;
     vertical-align: middle;
     padding-left: 12px;
-    /* word-break: break-all; */
 }
 
 li_click{
@@ -88,7 +88,7 @@ li:nth-child(odd) {
   .close {
     position: absolute;
     right: 0px;
-    padding: 0.5em;
+    padding: 0.45em;
     margin-top: -0.5em;
     font-weight: 700;
   }

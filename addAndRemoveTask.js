@@ -1,6 +1,6 @@
 function addAndRemoveTask (inputValue){
 
-    //Ajouter Item ou afficher message d'erreur si champ vide
+    //Add an item or display an alert message if the input is empty
     let newLi = document.createElement('li');
     let newTaskText = document.createTextNode(inputValue.value);
     newLi.appendChild(newTaskText);
@@ -12,22 +12,29 @@ function addAndRemoveTask (inputValue){
         document.getElementById("ulList").appendChild(newLi);
     }
 
-    //Reinititialiser la barre de saisie
+    //Reset input bar
     inputValue.value ="";
 
-    // Pour ajouter les croix aux nouvelles taches
+    // Add a close button to the new task created
     let closeItem = document.createElement("span");
     let closeCross = document.createTextNode("\u00D7");
     closeItem.className = "close";
     closeItem.appendChild(closeCross);
     newLi.appendChild(closeItem);
 
-    //Barrer Item
+    //Strikethrough item
+    newLi.addEventListener('click', function(){
+        if(this.style.textDecoration == 'line-through'){
+            newLi.style.textDecoration = 'none'
+        }
+        else{
+            newLi.style.textDecoration = 'line-through'
+        }
+    
+    })
 
-
-    //Supprimer Item
+    //Delete item
     closeItem.addEventListener('click', function(){
-        // console.log('test 1 2 test')
         closeItem.parentElement.remove()
     })
 }
